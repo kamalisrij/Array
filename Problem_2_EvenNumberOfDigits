@@ -1,4 +1,4 @@
-class Solution {
+class Problem_2_EvenNumberOfDigits {
     public int findNumbers(int[] nums) {
         int sol = 0;                            
 	    for(int n : nums)                      
