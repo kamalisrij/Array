@@ -1,4 +1,4 @@
-class Solution {
+class Problem_3_SortedSquares {
     public int[] sortedSquares(int[] A) {
         int n = A.length;
         int[] result = new int[n];
