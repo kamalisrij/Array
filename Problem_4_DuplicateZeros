@@ -1,4 +1,4 @@
-class Solution {
+class Problem_4_DuplicateZeros {
     public void duplicateZeros(int[] arr) {
     int n = arr.length, c = 0;
     
