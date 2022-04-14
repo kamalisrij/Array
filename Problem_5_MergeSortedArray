@@ -1,4 +1,4 @@
-class Solution {
+class Problem_5_MergeSortedArray {
     public void merge(int[] A, int m, int[] B, int n) {
         int i = m - 1, j = n - 1, k = m + n - 1;
         while(i >= 0 && j >= 0) {
