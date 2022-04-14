@@ -1,0 +1,22 @@
+class Solution {
+    public int n=3;
+    public int thirdMax(int[] nums) {
+        if(nums.length==0)
+            return 0;
+        TreeSet<Integer> s=new TreeSet<Integer>();
+        for(int i=0;i<nums.length;i++)
+        {
+            if(s.contains(nums[i]))
+                continue;
+            if(s.size()<n || nums[i]>s.first())
+            {
+                if(s.size()==n)
+                    s.remove(s.first());
+                s.add(nums[i]);
+            }
+        }
+        return s.size()==n?s.first():s.last();
+        
+        
+    }
+}
