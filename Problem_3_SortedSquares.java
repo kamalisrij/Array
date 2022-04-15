@@ -1,3 +1,4 @@
+import java.util.*;
 class Problem_3_SortedSquares {
     public int[] sortedSquares(int[] A) {
         int n = A.length;
@@ -15,4 +16,24 @@ class Problem_3_SortedSquares {
         return result;
        
     }
+    public static void main(String args[])
+    {
+	Scanner in=new Scanner(System.in);
+	System.out.println("Enter the length of the array:");
+	int l=in.nextInt();
+	int[] arr=new int[l];
+	System.out.println("Enter the element of the array:");
+	for(int j=0;j<l;j++)
+	{
+		arr[j]=in.nextInt();
+	}
+	Problem_3_SortedSquares s=new Problem_3_SortedSquares();
+	int a[]=s.sortedSquares(arr);
+	for(int k=0;k<l;k++)
+	{
+		System.out.println(a[k]);
+	}
+	
+	
+}
 }
