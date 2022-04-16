@@ -24,6 +24,7 @@ class Problem_1_MaxConsecutiveOnes {
 		System.out.println("enter the length of the array:");
 		int l=in.nextInt();
 		int[] arr=new int[l];
+		System.out.println("enter the elements of the array:");
 		for(int j=0;j<l;j++)
 		{
 			arr[j]=in.nextInt();
